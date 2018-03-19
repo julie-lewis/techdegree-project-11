@@ -1,18 +1,11 @@
 import React from 'react';
+import ImageContainer from './ImageContainer';
 
 const QueryResults = ({match}) => {
-	let query = match.params.query;
 
 	return (
-	    <div className="not-found">
-			<h3>HEY!</h3>
-			<p>Quit looking for {query}!</p>
-	    </div>
+		<ImageContainer query={match.params.query}/>
 	);
 }
-
-//<Route path= "/search" exact component={SearchForm} />
-//<Route path= "/search/:query" component={QueryResults} />
-
 
 export default QueryResults;

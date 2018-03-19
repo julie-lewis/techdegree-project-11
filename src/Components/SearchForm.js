@@ -1,10 +1,9 @@
 import React, { Component }  from 'react';
-import PropTypes from 'prop-types';
-
-import QueryResults from './QueryResults';
 
 class SearchForm extends Component {
 
+
+	//Submit function
 	handleSubmit = (e) => {
 		e.preventDefault();
 		let inputQuery = this.query.value;
@@ -30,8 +29,5 @@ class SearchForm extends Component {
 }
 
 
-SearchForm.propTypes = {
-
-};
 
 export default SearchForm;
