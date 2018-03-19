@@ -2,6 +2,7 @@ body {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   color: #3f4850;
+  margin-top: 80px;
 }
 h2 {
   font-size: 2em;
@@ -16,10 +17,15 @@ a {
   text-decoration: none;
 }
 .search-form {
-  max-width: 460px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0); 
+  width: 460px;
   display: flex;
   margin: 0 auto 32px;
 }
+
 .search-form button {
   outline: none;
   background-color: #438bbd;
@@ -78,6 +84,7 @@ input {
 .photo-container .not-found {
   width: 100%;
 }
+
 
 @media only screen and (max-width: 767px)  {
   body {
