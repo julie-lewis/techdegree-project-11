@@ -1,5 +1,6 @@
 import React from 'react';
 
+//displays when non-existent URL is called
 const Error = props =>
     <div className="not-found">
 		<h3>Oh No!</h3>

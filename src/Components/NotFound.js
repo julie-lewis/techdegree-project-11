@@ -1,5 +1,6 @@
 import React from 'react';
 
+// displays not found when no images match query
 const NotFound = () =>
     <div className="not-found">
 		<h3>No Results Found</h3>

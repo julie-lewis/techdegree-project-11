@@ -8,7 +8,7 @@ import NotFound from './NotFound';
 
 const ImageList = props => {
 
-	//takes keyword and api key as props, fetches photos and info from API}
+	//carries in keyword and api key as props, fetches photos and info from API, returns not found if approps
 	const results = props.data;
 
 	if (results.length > 0) {

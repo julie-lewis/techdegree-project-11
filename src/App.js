@@ -9,16 +9,12 @@ import {
 // App Components
 import Nav from './Components/Nav';
 import SearchForm from './Components/SearchForm';
-//import Cats from './Components/Cats';
-//import Dogs from './Components/Dogs';
-//import Beans from './Components/Beans';
 import ImageContainer from './Components/ImageContainer';
-//import ImageList from './Components/ImageList';
 import Error from './Components/Error';
 import QueryResults from './Components/QueryResults';
 
 
-
+//Sets up component paths for navigation and rendering, provides 404 fallback (error)
 const App = (props) => (
 
   <BrowserRouter>  
@@ -28,7 +24,6 @@ const App = (props) => (
       <Nav />
 
       <Switch>
-
         <Route path= "/" exact render={ () => <ImageContainer query="squirrels"/> } />
         <Route path= "/cats" render={ () => <ImageContainer query="cats"/> } />
         <Route path= "/dogs" render={ () => <ImageContainer query="dogs"/> } />

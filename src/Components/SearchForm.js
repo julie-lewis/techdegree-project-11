@@ -1,9 +1,8 @@
 import React, { Component }  from 'react';
 
+//takes query from form input, updates URL and passes query on to inform image results
 class SearchForm extends Component {
 
-
-	//Submit function
 	handleSubmit = (e) => {
 		e.preventDefault();
 		let inputQuery = this.query.value;

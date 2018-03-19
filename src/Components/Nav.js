@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-
+//renders main nav
 const Nav = props =>
     <nav className="main-nav">
         <ul>
